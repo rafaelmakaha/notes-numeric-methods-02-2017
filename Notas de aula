@@ -1,0 +1,8 @@
+### NOTAS DE AULA ###
+
+Métodos de Newton
+  Encontrar os zeros de uma função:
+    "Tirar a derivada e igualar a zero"
+    x = x - f(x)/f'(x)
+  Encontrar os mínimos de uma função:
+    x' = x - f'(x)/f''(x)
