@@ -6,3 +6,37 @@ Métodos de Newton
     x = x - f(x)/f'(x)
   Encontrar os mínimos de uma função:
     x' = x - f'(x)/f''(x)
+    
+    /*
+import numpy as np
+import matplotlib.pyplot as plt
+
+def f(x):
+    return (1/x**12)-(1/x**6)
+def df(x):
+    return (-12/x**13) +(6/x**7)
+def ddf(x):
+    return (156/x**14) - (42/x**8)
+    
+#potencial de leonard-jones
+x = np.linspace(1, 5, 100)
+plt.plot(x,f(x))
+plt.show()
+
+#Encontrar o minimo de f(x) utilizando o método de newton
+#para minimização
+# x0 = x - f'(x0)/f''(x0)
+
+x=1
+def resultado(x):
+    for i in range(25):
+        
+        x = x - df(x)/ddf(x)
+        print(x)
+        plt.plot(x,resultado(x))
+        plt.show()
+    return x
+
+*/
+
+######### Para achar máximos: x0 = x - f'(x0)/|f''(x0)
